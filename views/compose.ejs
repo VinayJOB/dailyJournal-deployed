@@ -1,0 +1,23 @@
+<%- include("partials/header"); %> 
+
+    <div  class="<%=className%>" role="alert">
+        <%= msg %> 
+    </div>
+    <div class="container" id="compose-container">
+    <h1>Compose</h1>
+    <form action="/compose" method="POST">
+        <div class="form-group">
+            <label for="title" >Title</label>
+            <input class="form-control" type="text" name="postTitle" autocomplete="off" minlength="6">
+
+            <label for="comment">Post</label>
+            <textarea id="textarea" class="form-control"  rows="4" name="postBody" minlength="10"></textarea>
+        </div>
+        <button class="btn btn-primary m-3" type="submit">Publish</button>
+    </form>
+<br><br>
+    <form action="/">
+        <button id="hiddenButton" class="<%= hiddenButton %>" type='submit'>click to go to home page</button> 
+    </form>
+
+<%- include("partials/footer"); %> 

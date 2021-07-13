@@ -1,0 +1,14 @@
+<%- include("partials/header");  %> 
+<div class="container">
+    <h1>Home</h1>
+    <p><%= homeStartingContent %></p>    
+   
+        <%  postDocs.forEach(function(element){ %>
+            <div class="new-post">
+                <h2><%=element.title %> </h2>
+                <span><%= element.content.substring(0,100) + "..." %> </span>  
+                <a class="readMore" style="display: inline-block;" href="/posts/<%= element._id %> "> Read more</a>
+             </div>   
+        <%   }) %>
+    
+<%- include("partials/footer");  %> 

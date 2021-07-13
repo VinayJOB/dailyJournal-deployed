@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    /* background-image: linear-gradient(to right, #37bec38f, #25c4da93, #0bb2d885, #28abdf75, #48a2e27c); */
+    /* background-image: url("../image/body-bg.jpg"); */
+    background-image: url("https://images.pexels.com/photos/172276/pexels-photo-172276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: repeat;
+    background-size: 100%;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin: 30px;
+}
+/* navbar section */
+
+nav .container-fluid{
+    padding: 0 10%;
+}
+nav li{
+    margin: 0 10px;
+}
+nav li a{
+    text-transform: capitalize;
+}
+/* navbar section  end*/
+/* ///////////////////////////////////////////////////////////////// */
+/* main section start */
+
+div.container{
+    min-height: 80vh;
+    background-color: #f8f4f461;
+    border-radius: 10px;
+    margin:20px 10%;
+ }
+
+ .container h2{
+     font-size: 1.5rem;
+ }
+ .container p{
+     font-size: 1.1rem;
+ }
+ /* compose section */
+ .container form .form-control{
+     background-color: #ffffff33;;
+ }
+ .container form label{
+     font-weight: 500;
+     margin: 10px;
+ }
+
+ .container .new-post {
+    padding: 20px 20px;
+    background: #ffffff17;
+}
+
+
+/* main section end */
+
+
+/* compose section end */
+
+.footer {
+	position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 100%;
+	height: 60px;
+	/* background-color: #1abc9c; */
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+.alert{
+    margin:0 auto;
+    margin-top: 20px;
+    max-width: 77%;
+}
+
+
+#textarea{
+    min-width: 400px;
+    min-height: 300px;
+    max-width: 1140px;
+    max-height: 800px;
+}
+
+#hiddenButton{
+    opacity: 0;
+}
+
+.readMore{
+    text-decoration: none;
+    color :rgba(96, 96, 196, 0.774);
+
+}
+
+
+/* when there will page not problem occur */
+
+#PageNotFound{
+    background-image: url("https://www.artzstudio.com/wp-content/uploads/2020/05/404-error-not-found-page-lost-1024x788.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#para_with_three_Dot{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:900px;
+}
+
